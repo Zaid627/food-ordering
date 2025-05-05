@@ -1,7 +1,7 @@
 import Image from "next/image";
 import AddToCartButton from "../../components/menu/AddToCartButton";
 
-export default function ({ onAddToCart, ...item }) {
+export default function  MenuItemTile({ onAddToCart, ...item }) {
   const { image, description, name, basePrice, sizes, extraIngredientPrices } =
     item;
 
