@@ -1,7 +1,8 @@
 // lib/isAdmin.js
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/authOptions";
-import UserInfo from "@/models/UserInfo";
+// import { authOptions } from "@/lib/authOptions";
+import authOptions from "../libs/authOptions"
+import UserInfo from "../app/models/UserInfo";
 
 export async function isAdmin() {
   const session = await getServerSession(authOptions);
